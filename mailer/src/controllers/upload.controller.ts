@@ -18,7 +18,7 @@ const uploadController = {
         file.tempFilePath,
         {
           folder: "avatar",
-          width: 160,
+          width: 150,
           height: 150,
           crop: "fill",
         },
