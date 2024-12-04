@@ -1,0 +1,28 @@
+# node_module
+/node_modules
+/node_modules/
+node_modules/
+
+# .env
+.env
+.env*.local
+
+# .log
+*.log
+
+# ts
+*.tsbuildinfo
+
+# production env
+/build
+
+# NestJS
+/.next/
+/out/
+
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
