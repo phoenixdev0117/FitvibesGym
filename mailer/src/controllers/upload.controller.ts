@@ -18,7 +18,7 @@ const uploadController = {
         file.tempFilePath,
         {
           folder: "avatar",
-          width: 150,
+          width: 160,
           height: 150,
           crop: "fill",
         },
@@ -37,10 +37,12 @@ const uploadController = {
   },
 };
 
+
 const removeTmp = (path: any) => {
   fs.unlink(path, (err: any) => {
     if (err) throw err;
   });
 };
+
 
 export default uploadController;
