@@ -37,12 +37,10 @@ const uploadController = {
   },
 };
 
-
 const removeTmp = (path: any) => {
   fs.unlink(path, (err: any) => {
     if (err) throw err;
   });
 };
-
 
 export default uploadController;
