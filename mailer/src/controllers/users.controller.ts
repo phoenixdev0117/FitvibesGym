@@ -100,14 +100,7 @@ const userController = {
     }
 
   },
-  mailer: async (req: Request, res: Response) => {
-    const { to, date, classNum, seatsList } = req.body;
-    console.log("to ======>>>>> ", to);
-    console.log("txt ======>>>>> ", date);
-    const result = await sendMail(to, date, classNum, seatsList);
-    console.log("result ======>>>>> ", result); 
-    res.json({aa:"asf"});
-  },
+  
   activateEmail: async (req: Request, res: Response) => {
     const { activation_token } = req.body;
     console.log("activation_token ======>>>>> ", activation_token);
@@ -149,7 +142,7 @@ const userController = {
           .status(400)
           .json({ msg: "The email/password you entered is incorrect." });
 
-      const refresh_token = createRefreshToken({ id: user._id });
+      const refresh_token = createRefreshToken({ id: user._id, name: user._name });
       // res.cookie("refreshtoken", refresh_token, {
       //   httpOnly: true,
       //   path: "/api/users/refresh_token",
@@ -160,6 +153,14 @@ const userController = {
     } catch (err: any) {
       return res.status(500).json({ msg: err.message });
     }
+  },
+  mailer: async (req: Request, res: Response) => {
+    const { to, date, classNum, seatsList } = req.body;
+    console.log("to ======>>>>> ", to);
+    console.log("txt ======>>>>> ", date);
+    const result = await sendMail(to, date, classNum, seatsList);
+    console.log("result ======>>>>> ", result); 
+    res.json({aa:"asf"});
   },
   getAccessToken: (req: Request, res: Response) => {
     try {
@@ -235,39 +236,6 @@ const userController = {
       return res.status(500).json({ msg: err.message });
     }
   },
-  updateUser: async (req: Request, res: Response) => {
-    try {
-      const { name, email, avatar } = req.body;
-      await Users.findOneAndUpdate(
-        { _id: (<any>req).user.id },
-        { name, email, avatar }
-      );
-      res.json({ msg: "Update Success!" });
-    } catch (err: any) {
-      return res.status(500).json({ msg: err.message });
-    }
-  },
-  updateUsersRole: async (req: Request, res: Response) => {
-    try {
-      const { role } = req.body;
-      await Users.findOneAndUpdate(
-        { _id: req.params.id },
-        {
-          role,
-        }
-      );
-      res.json({ msg: "Update Success!" });
-    } catch (err: any) {
-      return res.status(500).json({ msg: err.message });
-    }
-  },
-  deleteUser: async (req: Request, res: Response) => {
-    try {
-      await Users.findByIdAndDelete(req.params.id);
-      res.json({ msg: "Deleted Success!" });
-    } catch (err: any) {
-      return res.status(500).json({ msg: err.message });
-    }
-  },
+  
 };
 export default userController;
