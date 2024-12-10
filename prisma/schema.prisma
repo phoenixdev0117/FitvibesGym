@@ -1,0 +1,207 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model pais {
+  id     Int          @id @default(autoincrement())
+  nombre String       @unique
+  users  userplanes[]
+}
+
+model estadopago {
+  id     Int       @id @default(autoincrement())
+  nombre String    @unique
+  pagos  payment[]
+}
+
+model genero {
+  id     Int          @id @default(autoincrement())
+  nombre String       @unique
+  users  userplanes[]
+}
+
+model planes {
+  id     Int    @id @default(autoincrement())
+  nombre String @unique
+
+  payments payment[]
+}
+
+model userol {
+  id     Int    @id @default(autoincrement())
+  nombre String @unique
+  users  user[]
+}
+
+model mensajeuser {
+  id        Int      @id @default(autoincrement())
+  email     String
+  nombre    String
+  telefono  String
+  mensaje   String
+  createdat DateTime @default(now())
+  updatedat DateTime @updatedAt
+}
+
+model promocodes {
+  id         Int      @id @default(autoincrement())
+  code       String   @unique
+  discount   Int
+  percent    Int
+  used       Int
+  expiration DateTime
+  createdat  DateTime @default(now())
+  updatedat  DateTime @updatedAt
+}
+
+model account {
+  id                Int     @id @default(autoincrement())
+  userId            Int
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user user @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model session {
+  // id auto incremental entero
+  id           Int      @id @default(autoincrement())
+  sessionToken String   @unique
+  userId       Int
+  expires      DateTime
+  user         user     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model user {
+  id            Int       @id @default(autoincrement())
+  name          String
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  password      String?
+
+  roleId Int
+  role   userol? @relation(fields: [roleId], references: [id])
+
+  accounts              account[]
+  sessions              session[]
+  isTwoFactorEnabled    Boolean                @default(false)
+  twoFactorConfirmation twofactorconfirmation?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model verificationtoken {
+  id      Int      @id @default(autoincrement())
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([email, token])
+}
+
+model passwordresettoken {
+  id      Int      @id @default(autoincrement())
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([email, token])
+}
+
+model twofactortoken {
+  id      Int      @id @default(autoincrement())
+  email   String
+  token   String   @unique
+  expires DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([email, token])
+}
+
+model twofactorconfirmation {
+  id Int @id @default(autoincrement())
+
+  userId Int
+  user   user @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId])
+}
+
+model payment {
+  id Int @id @default(autoincrement())
+
+  numerotransaccion String?
+
+  estadopagoId Int?
+  estadopago   estadopago? @relation(fields: [estadopagoId], references: [id])
+
+  inscripcion   Float   @default(0)
+  mensualidad   Float   @default(0)
+  descuento     Float   @default(0)
+  total         Float   @default(0)
+  domiciliacion Boolean @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId Int
+  user   userplanes @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  //plan
+  plan     planes @relation(fields: [planesId], references: [id])
+  planesId Int
+}
+
+model userplanes {
+  id Int @id @default(autoincrement())
+
+  nombre   String?
+  apellido String?
+  email    String?
+  dia      String?
+  mes      String?
+  anio     String?
+  telefono String?
+
+  generoId Int
+  genero   genero? @relation(fields: [generoId], references: [id])
+
+  paisId Int
+  pais   pais? @relation(fields: [paisId], references: [id])
+
+  payments payment[]
+
+  createdat DateTime @default(now())
+  updatedat DateTime @updatedAt
+}
