@@ -1,0 +1,661 @@
+.home_links {
+    -webkit-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.diagonal_box_a1 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+
+.diagonal_box_a1::before {
+    content: "";
+    transform: skewX(20deg); 
+    -ms-transform: skewX(20deg); 
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio1.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 30%;
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; 
+    height: 1500px; 
+}
+
+
+.diagonal_box_a2 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a2::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio2.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 30%;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; /* something ridiculously big */
+}
+
+.diagonal_box_a3 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a3::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image:url('/imgs/services/servicio3.jpg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; /* something ridiculously big */
+}
+
+.diagonal_box_a4 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a4::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio4.jpg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+}
+.diagonal_box_a5 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a5::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio5.jpg');
+    background-size: 30%;
+    background-repeat:no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+}
+.diagonal_box_a6 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a6::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio6.webp');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px; 
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+}
+.diagonal_box_a7 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a7::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio7.jpg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;  
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+}
+
+.diagonal_box_a8 {
+    transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari and Chrome */
+    width: 310px;
+    height: 310px;
+    /* new styles */
+    position: relative;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    transition: width 0.5s ease;
+}
+
+.diagonal_box_a8::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/servicio8.jpeg');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px; 
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+}
+
+
+.fondo {
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    
+}
+
+.img2 {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/imgs/servicios.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+
+}
+
+/* media query para md*/
+@media (min-width: 1px) {
+    .diagonal_box_a1 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a1::before {
+        background-size: 24%;
+    }
+    
+    .diagonal_box_a2 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a2::before {
+        background-size: 24%;
+    }
+
+    .diagonal_box_a3 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a3::before {
+        background-size: 24%;
+    }
+    
+    .diagonal_box_a4 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a4::before {
+        background-size: 24%;
+    }
+}
+/* media query para md*/
+@media (min-width: 440px) {
+    .diagonal_box_a1 {
+        width: 180px ;
+        height: 180px ;
+    }
+
+    
+    .diagonal_box_a1::before {
+        background-size: 22%;
+    }
+    
+    .diagonal_box_a2 {
+        width: 180px ;
+        height: 180px ;
+    }
+    .diagonal_box_a2::before {
+        background-size: 22%;
+    }
+    .diagonal_box_a3 {
+        width: 180px ;
+        height: 180px ;
+    }
+    .diagonal_box_a3::before {
+        background-size: 22%;
+    }
+    
+    .diagonal_box_a4 {
+        width: 180px ;
+        height: 180px ;
+    }
+    .diagonal_box_a4::before {
+        background-size: 22%;
+    }
+}
+/* media query para lg*/
+@media (min-width: 603px) {
+    .diagonal_box_a1 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a1::before {
+        background-size: 25%;
+    }
+    
+    .diagonal_box_a2 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a2::before {
+        background-size: 25%;
+    }
+
+    .diagonal_box_a3 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a3::before {
+        background-size: 25%;
+    }
+    
+    .diagonal_box_a4 {
+        width: 210px ;
+        height: 210px ;
+    }
+    .diagonal_box_a4::before {
+        background-size: 25%;
+    }
+}
+/* media query para xl*/
+@media (min-width: 695px) {
+    .diagonal_box_a1 {
+        width: 250px ;
+        height: 250px ;
+    }
+    
+    .diagonal_box_a1::before {
+        background-size: 31%;
+    }
+    
+    .diagonal_box_a2 {
+        width: 250px ;
+        height: 250px ;
+    }
+    .diagonal_box_a2::before {
+        background-size: 31%;
+    }
+    .diagonal_box_a3 {
+        width: 250px ;
+        height: 250px ;
+    }
+    
+    .diagonal_box_a3::before {
+        background-size: 31%;
+    }
+    .diagonal_box_a4 {
+        width: 250px ;
+        height: 250px ;
+    }
+    .diagonal_box_a4::before {
+        background-size: 31%;
+    }
+}
+/* media query para 2xl*/
+@media (min-width: 800px) {
+    .diagonal_box_a1 {
+        width: 310px ;
+        height: 310px ;
+    }
+    
+    .diagonal_box_a2 {
+        width: 310px ;
+        height: 310px ;
+    }
+    .diagonal_box_a3 {
+        width: 310px ;
+        height: 310px ;
+    }
+    
+    .diagonal_box_a4 {
+        width: 310px ;
+        height: 310px ;
+    }
+}
+
+
+.opacity_image1::before { 
+    content: "";
+    transform: skewX(20deg); 
+    -ms-transform: skewX(20deg); 
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/1.png'); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 31%;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; 
+    height: 1500px; 
+}
+.opacity_image2::before { 
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/2.png'); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 31%;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; /* something ridiculously big */
+}
+.opacity_image3::before{ 
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/3.png'); 
+    /* background-image: url('/imgs/img3-hover.webp'); */
+    background-size: 31%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; /* something ridiculously big */
+}
+.opacity_image4::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/4.png'); 
+    /* background-image: url('/imgs/img4-hover.webp'); */
+    background-size: 31%; 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+    background-color: transparent;
+}
+.opacity_image5::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/5.png'); 
+    /* background-image: url('/imgs/img4-hover.webp'); */
+    background-size: 31%; 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+    background-color: transparent;
+}
+.opacity_image6::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/8.png'); 
+    /* background-image: url('/imgs/img4-hover.webp'); */
+    background-size: 31%; 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+    background-color: transparent;
+}
+.opacity_image7::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/6.png'); 
+    /* background-image: url('/imgs/img4-hover.webp'); */
+    background-size: 31%; 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+    background-color: transparent;
+}
+.opacity_image8::before {
+    content: "";
+    transform: skewX(20deg); /* Cambiado a valor positivo */
+    -ms-transform: skewX(20deg); /* IE 9 */
+    -webkit-transform: skewX(20deg); 
+    background-image: url('/imgs/services/7.png'); 
+    /* background-image: url('/imgs/img4-hover.webp'); */
+    background-size: 31%; 
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    top: 0;
+    left: -110px;
+    
+    
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    width: 1500px; /* something ridiculously big */
+    height: 1500px; 
+    
+    background-color: transparent;
+}

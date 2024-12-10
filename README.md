@@ -1,18 +1,38 @@
-# FitvibesGym
+## Full servicio de Autenticación - Next 14
 
-## Usecase
+[https://FitvibesGym.vercel.app/](https://FitvibesGym.vercel.app/)
 
-`
-This project was used folowing skillset:
-- next.js
-- laravel
-- nodemailer
-`
+Proyecto Next.js 14 con Autenticación
 
-1. lalal
-2. ererer
-3. dfdfdfdf
+## Tecnologías
+- Next.js 14
+- TypeScript
+- Prisma 
+- NextAuth
+- React Hook Form
+- TailwindCSS
+- Shadcn UI
 
-'ererer
-ererer
-Ererer'
+## Instalación
+1. Crear copia del archivo ```.env.example```del proyecto next.js y laravel, y asignar valores
+2. Ejecutar ```npm install```
+3. Levantar la base de datos 
+4. Correr las migraciones ```npx prisma migrate dev```
+6. Ejecutar ```npm run dev```
+7. npx prisma generate
+8. Ejecutar ```yarn dev```
+
+
+## Presentación
+
+![Pagina Home](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/1.png?raw=true)
+
+![Login Modal](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/2.png?raw=true)
+
+![Login Page](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/3.png?raw=true)
+
+![Register Page](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/4.png?raw=true)
+
+![Reset Password](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/5.png?raw=true)
+
+![Auth 2f](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/6.png?raw=true)
