@@ -1,0 +1,40 @@
+.slick-next:before {
+    font-size: 58px; /* Ajusta el tamaño de la flecha */
+    color: #000; /* Cambia el color de la flecha */
+    margin-left: -4px;
+  }
+  
+  .slick-next {
+    right: 10px; /* Ajusta según sea necesario */
+    z-index: 1; /* Asegúrate de que esté sobre la imagen */
+    width: 40px;
+    height: 40px;
+    color: #000; /* Cambia el color de fondo de la flecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Opcional: para darle forma circular */
+    /* Opacidad para semi-transparencia */
+  
+  }
+  
+.slick-prev:before {
+    font-size: 58px; /* Ajusta el tamaño de la flecha */
+    color: #000; /* Cambia el color de la flecha */
+    margin-left: -4px;
+  }
+  
+  .slick-prev {
+    right: 10px; /* Ajusta según sea necesario */
+    z-index: 1; /* Asegúrate de que esté sobre la imagen */
+    width: 40px;
+    height: 40px;
+    color: #000; /* Cambia el color de fondo de la flecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Opcional: para darle forma circular */
+    /* Opacidad para semi-transparencia */
+  
+  }
+  
