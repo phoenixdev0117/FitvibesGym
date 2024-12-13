@@ -1,0 +1,10 @@
+.cnpBillingCheckoutWrapper {position:relative;}
+.cnpBillingCheckoutHeader {width:100%;border-bottom: 1px solid #c0c0c0;margin-bottom:10px;}
+div.wpwl-sup-wrapper-state, div.wpwl-sup-wrapper-city { width:32%;float:left;margin-right:2% }
+div.wpwl-sup-wrapper-postcode { width:32%;float:left }
+div.wpwl-sup-wrapper-country { width: 66% }
+div.wpwl-wrapper-brand, div.wpwl-label-brand, div.wpwl-brand { display: none;}
+div.wpwl-group-cardNumber { width:60%; float:left; font-size: 20px;  }
+div.wpwl-group-brand { width:35%; float:left; margin-top:28px }
+div.wpwl-brand-card  { width: 65px }
+div.wpwl-brand-custom  { margin: 0px 5px }
