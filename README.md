@@ -6,10 +6,11 @@ Proyecto Next.js 14 con Autenticación
 
 ## Tecnologías
 - Next.js 14
+- Laravel
 - TypeScript
+- PHP
 - Prisma 
 - NextAuth
-- React Hook Form
 - TailwindCSS
 - Shadcn UI
 
