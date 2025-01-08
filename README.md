@@ -29,18 +29,3 @@ Proyecto Next.js 14 con Autenticación
 12. Crea otra Terminal y Ejecutar ```cd mailer```
 13. Ejecutar ```npm install```
 14. Ejecutar ```yarn dev```
-
-
-## Presentación
-
-![Pagina Home](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/1.png?raw=true)
-
-![Login Modal](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/2.png?raw=true)
-
-![Login Page](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/3.png?raw=true)
-
-![Register Page](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/4.png?raw=true)
-
-![Reset Password](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/5.png?raw=true)
-
-![Auth 2f](https://github.com/ZitelliDZ/autenticacion-next/blob/main/presentacion/6.png?raw=true)
